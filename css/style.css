@@ -1,0 +1,425 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+:root{
+    --second-font-family:'Roboto Slab', serif;
+}
+
+html::-webkit-scrollbar{
+    background-color: cadetblue;
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: coral;
+    border-radius: 60px;
+}
+/* start header */
+.header{
+    background-image: url("../images/bachgound-color.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+.header h1{
+    text-align: center;
+    padding-top: 150px;
+    font-family: var(--second-font-family);
+    font-size: 70px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.header .content{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.header .content .left ,
+.header .content .half ,
+.header .content .right{
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #000000c2;
+    width: 100%;
+}
+.header .content .left img,
+.header .content .half img,
+.header .content .right img{
+    border: 2px solid;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.header .content .left{
+    border:1px solid orange;
+}
+.header .content .left img{
+    color: orange;
+    background-color: orange;
+    transition: 0.3s;
+}
+.header .content .left:hover img{
+    transform: rotate(360deg);
+}
+.header .content .half{
+    border:1px solid #16b6a1;
+}
+.header .content .half img{
+    color: #16b6a1;
+    background-color:#16b6a1 ;
+    transition: 0.3s;
+}
+.header .content .half:hover img{
+    transform: rotate(360deg);
+}
+.header .content .right{
+    border:1px solid #1daad2;
+}
+.header .content .right img{
+    background-color: #1daad2;
+    color: #1daad2;
+    transition: 0.3s;
+}
+.header .content .right:hover img{
+    transform: rotate(360deg);
+}
+.header .content h3{
+    font-weight: 300;
+}
+.header .content p{
+    font-weight: 200;
+}
+/* end header */
+/* start online */
+.online{
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment:fixed;
+}
+.online .back{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #000000b0;
+}
+.online .top{
+    display: flex;
+    flex-direction: row;
+    background-color: #292d33;
+    margin-bottom: 60px;
+    width: 150%;
+    transform: translateX(80px);
+}
+.online .top .left{
+    background-color: orange;
+    padding: 80px 70px;
+}
+.online .top img{
+    width: 100px;
+    padding: 20px 20px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.online .top .half{
+    padding: 50px 30px;
+    width: 24%;
+}
+.online .top .half h3{
+    font-family: var(--second-font-family);
+    border-top: 3px solid orange;
+    padding-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+    width: 250px;
+}
+.online .top .right {
+    padding: 50px 30px;
+}
+.online .top .right p{
+    max-width: 320px;
+    transform: translate(-55px, 0px);
+}
+.online .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.online .bottom .left{
+    width: 50%;
+}
+.online .bottom .left h2{
+    font-size: 130px;
+    font-family: var(--second-font-family);
+}
+.online .bottom .right p{
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 30px;
+    line-height: 1.6;
+}
+.online .bottom .right button{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: orange;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+.online .bottom .right button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+/* end online */
+/* start services */
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #292d33;
+    color: white;
+}
+.services .cont img{
+    width: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.services .cont:hover img{
+    transform: rotate(360deg) scale(1.2);
+}
+.services .cont h3{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.services .cont:hover h3{
+    color: tomato;
+}
+.services .cont p{
+    font-weight: 200;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* end services */
+/* start optimize */
+.optimize{
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.optimize .back{
+    background-color: #00000082;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.optimize .content .top{
+    display: flex;
+    flex-direction: row;
+    background-color: #292d33;
+    transform: translate(-170px, 0px);
+    justify-content: end;
+}
+
+.optimize .content .top h3{
+    font-size: 45px;
+    font-family: var(--second-font-family);
+    font-weight: 500;
+    padding: 60px;
+    margin-left: 115px;
+    position: relative;
+}
+.optimize .content .top h3::after{
+    content: '';
+    position: absolute;
+    top: 45px;
+    width: 210px;
+    height: 3px;
+    background-color: #1daad2;
+    left: 50px;
+}
+
+.optimize .content .top p{
+    max-width: 400px;
+    padding: 60px 10px;
+
+}
+.optimize .content .top .right{
+    background-color:#1daad2 ;
+    width: 250px;
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.optimize .content img{
+    height: 100px;
+    margin-top: 100px;
+}
+.optimize .content .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.optimize .content .bottom p{
+    max-width: 500px;
+    font-weight: 400;
+}
+.optimize .content .bottom h2{
+    font-size: 130px;
+    font-family: var(--second-font-family);
+}
+.optimize .content .bottom button{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.optimize .content .bottom button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+/* end optimize */
+/* start Fast */
+.fast{
+    background-image: url("../images/5.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment:fixed;
+}
+.fast .back{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #000000b0;
+}
+.fast .top{
+    display: flex;
+    flex-direction: row;
+    background-color: #292d33;
+    margin-bottom: 60px;
+    width: 150%;
+    transform: translateX(80px);
+}
+.fast .top .left{
+    background-color: #16b6a1;
+    padding: 80px 70px;
+}
+.fast .top img{
+    width: 100px;
+    padding: 20px 20px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.fast .top .half{
+    padding: 50px 30px;
+    width: 24%;
+}
+.fast .top .half h3{
+    font-family: var(--second-font-family);
+    border-top: 3px solid #16b6a1;
+    padding-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+    width: 250px;
+}
+.fast .top .right p{
+    max-width: 320px;
+    transform: translate(-55px, 0px);
+}
+.fast .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.fast .bottom .left{
+    width: 50%;
+}
+.fast .bottom .left h2{
+    font-size: 130px;
+    font-family: var(--second-font-family);
+}
+.fast .top .right {
+    padding: 50px 30px;
+}
+.fast .bottom .right p{
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 30px;
+    line-height: 1.6;
+}
+.fast .bottom .right button{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #16b6a1;
+    border: none;
+    color: white;
+}
+.fast .bottom .right button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+/* end Fast */
+/* start contact */
+.contact {
+    color: white;
+    background-color: #292d33;
+    padding: 60px 100px ;
+}
+.contact .top{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact .top h2{
+    font-family: var(--second-font-family);
+    font-size: 45px;
+    color: #0d6efd;
+}
+.contact .top p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* end contact */
+/* start button to top */
+.up{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: none;
+}
+.up img{
+    width: 30px;
+}
+
+/* end button to top */
+/* start loading */
+.loading{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 230px;
+}
+/* end loading */

@@ -1,0 +1,112 @@
+@media (max-width:997px){
+    .header .content{
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: 58px;
+    }
+    .online .top{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transform: translate(0);
+    }
+    .online .top .left{
+        padding: 30px;
+    }
+    .online .top .half, .online .top .right{
+        width: 100%;
+        padding: 30px 30px;
+    }
+    .online .top .half h3{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .online .top .right p{
+        max-width: 100%;
+        transform: translate(0);
+    }
+    .online .bottom{
+        flex-direction: column;
+        gap: 0;
+        padding-top: 0;
+    }
+    .optimize .content .top{
+        flex-direction: column;
+        transform: translate(0);
+    }
+    .optimize .content .top h3{
+        margin-left: initial;
+        text-align: center;
+        padding: 30px;
+    }
+    .optimize .content .top h3::after{
+        display: none;
+    }
+    .optimize .content .top p{
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .optimize .content .top .right{
+        width: 100%;
+    }
+    .optimize .content img{
+        margin: 30px;
+    }
+    .optimize .content .bottom{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .optimize .content .bottom p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fast .top{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transform: translate(0);
+    }
+    .fast .top .left{
+        padding: 30px;
+    }
+    .fast .top .half, .online .top .right{
+        width: 100%;
+        padding: 30px 30px;
+    }
+    .fast .top .half h3{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fast .top .right p{
+        max-width: 100%;
+        transform: translate(0);
+    }
+    .fast .bottom{
+        flex-direction: column;
+        gap: 0;
+        padding-top: 0;
+    }
+    .contact{
+        padding: 20px;
+    }
+}
+
+
+
+
+@media (max-width:660px){
+    .header h1{
+        font-size: 40px;
+    }
+    .online .bottom .right p,
+    .fast .bottom .right p{
+        padding-top: initial;
+        font-size: inherit;
+    }
+    
+    
+}
